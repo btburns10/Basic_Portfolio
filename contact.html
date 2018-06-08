@@ -3,42 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Burns Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheet.css">
 </head>
 
 <body>
-<header>
-  <nav>
-    <p>Brendan Burns</p>
-    
-    <ul>
-      <li id="contact">Contact</li>
-      <li id="about"><a href="portfolio.html">Portfolio</a></li>
-      <li id="home"><a href="index.html">Home</a></li>
+
+  <header>
+  <nav class="nav-container">
+    <div class="brand">
+      <p>Brendan Burns</p>
+    </div>
+    <ul class="sidebar">
+      <li><a href="index.html" target=" blank">About</a></li>
+      <li id="nav-detail"><a href="portfolio.html" target=" blank">Portfolio</a></li>
+      <li>Contact</li>
     </ul>
   </nav>
 </header>
 
 <main>
-  <div class="form">
-    <h1>Portfolio</h1>
-    <hr size="2">     
-    <form>
-      <label for="name">Name</label><br>
-      <input name="Name" id="name" type="text" placeholder="Full Name" required>
-    <br>
-      <label for="message">Message</label><br>
-      <input id="message" type="text" size="85%" maxlength=100>
-    </form>
+  <div class="background">
+    <div class="body-container">
+      <div class="heading-1"><h2>Contact</h2></div>
+      <form class="contact-form">
+        <label for="user">Name:</label><br>
+        <input type="text" name="fullName" id="user" placeholder="Full Name" required>
+      <br>
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email" placeholder="Email Address" required>
+      <br>
+        <label for="feedback">Message:</label><br>
+        <textarea rows="8" placeholder="We appreciate your feedback!"></textarea>
+      <br>
+        <button>Submit</button>
+      </form>  
+    </div>
   </div>
-
-  </section>
-
 </main>
 
-<footer>
-  <p>Copyright &copy;</p>
-</footer>
+<footer>Copyright &copy;</footer>
       
 
 </body>
+</html>
